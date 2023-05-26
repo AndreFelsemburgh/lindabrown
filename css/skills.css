@@ -1,0 +1,60 @@
+.skills {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 40px 20px;
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  align-items: center;
+  border-bottom: 4px solid #6e3400;
+}
+
+.skills h2 {
+  font-size: 4rem;
+  font-style: italic;
+  color: #cf6302;
+  padding-left: 100px;
+}
+
+.skills-texto {
+  font-size: 1.5rem;
+  line-height: 1.5;
+  max-width: 80ch;
+}
+
+/* RESPONSIVIDADE */
+@media (max-width: 1120px) {
+  .skills h2 {
+    font-size: 3rem;
+  }
+}
+
+@media (max-width: 770px) {
+  .skills-texto {
+    font-size: 1.2rem;
+    line-height: 1.5;
+    max-width: 80ch;
+  }
+
+  .skills h2 {
+    font-size: 2.5rem;
+    padding-left: 50px;
+  }
+
+}
+
+@media (max-width: 450px) {
+  .skills {
+    grid-template-columns: 1fr;
+  }
+
+  .skills h2 {
+    padding-left: 0px;
+    margin-bottom: 20px;
+  }
+
+  .skills-texto {
+    font-size: 1.3rem;
+    line-height: 1.3;
+    max-width: initial;
+  }
+}

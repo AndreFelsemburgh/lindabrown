@@ -1,0 +1,136 @@
+.informacao {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 50px;
+  align-items: center;
+  padding: 40px 20px;
+  border-bottom: 4px solid #6e3400;
+}
+
+.informacao-dados h1 {
+  font-size: 5rem;
+  line-height: 0.9;
+  color:#6e3400;
+  position: relative;
+  text-transform: uppercase;
+}
+
+.informacao-dados h1::after {
+  content: '';
+  display: block;
+  background: url('../img/realcar-64.png') no-repeat center;
+  width: 64px;
+  height: 64px;
+  position: absolute;
+  top: 0;
+  left: 250px;
+}
+
+.informacao-dados h2 {
+  font-size: 2.5rem;
+  font-style: italic;
+  margin-bottom: 20px;
+  color:#cf6302;
+}
+
+.informacao-dados li {
+  font-size: 1.2rem;
+  margin-bottom: 10px;
+  line-height: 1.2;
+  color: #311700;
+}
+
+
+/* RESPONSIVIDADE */
+@media (max-width: 1000px) {
+  .informacao h1 {
+    font-size: 4rem;
+  }
+
+  .informacao h2 {
+    font-size: 2rem;
+  }
+
+  .informacao-dados h1::after {
+    left: 195px;
+  }
+}
+
+  @media (max-width: 770px) {
+    .informacao h1 {
+      font-size: 3rem;
+  }
+
+  .informacao-dados h1::after {
+    left: 155px;
+    background: url('../img/realcar-32.png') no-repeat center;
+    width: 32px;
+    height: 32px;
+    top: 5px;
+  }
+
+  .informacao h2 {
+    font-size: 2rem;
+  }
+
+  .informacao-dados li {
+    font-size: 1.2rem;
+  }
+}
+
+
+@media (max-width: 590px) {
+  .informacao {
+    gap: 20px;
+    /*padding: 10px 40px 10px 20px;*/
+  }
+
+  .informacao h1 {
+    font-size: 2.rem;
+  }
+  
+  .informacao h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+  }
+  
+} 
+
+
+
+@media (max-width: 450px) {
+  .informacao {
+    grid-template-columns: 1fr;
+    gap: 20px;
+    padding: 10px 40px 10px 20px;
+  }
+
+  .informacao img {
+  border: 5px solid #6e3400;
+  padding: 3px;
+  border-radius: 50%;
+  margin-top: 0;
+  }
+  
+  .informacao h1 {
+    font-size: 6rem;
+  }
+  
+  .informacao-dados h1::after {
+    left: 300px;
+    background: url('../img/realcar-64.png') no-repeat center;
+    width: 64px;
+    height: 64px;
+  }
+  
+  .informacao h2 {
+    font-size: 4rem;
+    margin-bottom: 20px;
+  }
+  
+  .informacao-dados li {
+    font-size: 1.3rem;
+  }
+} 
